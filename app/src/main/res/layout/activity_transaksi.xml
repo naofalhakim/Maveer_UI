@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.motionlaboratory.meesier.TransaksiActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rekap Transaksi Anda" />
+
+    <ImageView
+        android:layout_below="@id/judul"
+        android:id="@+id/lbl_1"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/l_lokasi"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/lbl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lokasi/Gedung"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/txt_trans_nama_lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/txt_trans_harga_lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="6pt" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lbl_2"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_label"
+        android:layout_below="@id/lbl_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/l_dekorasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/lbl_2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Dekorasi"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/txt_trans_nama_dekorasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/txt_trans_harga_dekorasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="6pt" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lbl_3"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_label"
+        android:layout_below="@id/lbl_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/l_foto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/lbl_3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Penyedia Jasa Foto"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/txt_trans_nama_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/txt_trans_harga_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="6pt" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lbl_4"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_label"
+        android:layout_below="@id/lbl_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/l_undangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/lbl_4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Jasa Penyedia Undangan"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/txt_trans_nama_undangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/txt_trans_harga_undangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="6pt" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/lbl_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_4"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_label" />
+
+    <LinearLayout
+        android:id="@+id/l_sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_4"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/lbl_5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Jasa Penyedia Sound System"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PT Sound Banter"
+            android:textSize="6pt" />
+
+        <TextView
+            android:text="Rp. 2.000.000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="6pt" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lbl_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_5"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_label" />
+
+    <LinearLayout
+        android:id="@+id/l_makanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/lbl_6"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Jasa Penyedia Katering"
+            android:textSize="8pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miramen Ichiraku"
+            android:textSize="6pt" />
+
+        <TextView
+            android:text="Rp. 6.000.000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="6pt" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_transaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selesai"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

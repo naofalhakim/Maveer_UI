@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.motionlaboratory.meesier.DetailLokasiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/l_bg_detail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/imgzoom"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:paddingTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/colorWhite"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="30dp">
+
+                    <TextView
+                        android:id="@+id/txt_nama_hotel_det"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Hotel Shinta" />
+
+                    <RatingBar
+                        android:id="@+id/rat_tempat_det"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_toRightOf="@+id/txt_nama_hotel_det"
+                        android:elevation="0dp"
+                        android:numStars="4"
+                        android:rating="3" />
+
+                    <TextView
+                        android:id="@+id/txt_kategori_tempat_det"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_nama_hotel_det"
+                        android:layout_centerHorizontal="true"
+                        android:text="Kapasis" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_kategori_tempat_det"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/ic_pick_location" />
+
+                        <TextView
+                            android:id="@+id/txt_lokasi_tempat_det"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Desa Kudu" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/face01"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/imgbtn_sms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_letter" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_telp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_phone" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_mess"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_fav" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/img_zoom"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/imgzoom" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:columnCount="3"
+                    android:rowCount="1"
+                    android:useDefaultMargins="true">
+
+                    <ImageView
+                        android:id="@+id/img_det_1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/img1" />
+
+                    <ImageView
+                        android:id="@+id/img_det_2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/img2" />
+
+                    <ImageView
+                        android:id="@+id/img_det_3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/img3" />
+
+                </GridLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="32dp"
+                        android:text="Deskripsi Tempat" />
+
+                    <TextView
+                        android:id="@+id/txt_kapasistas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txt_akses_lokasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txt_properties_tambahan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/fab_margin"
+        >
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_pilih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorWhite"
+            android:src="@drawable/ic_next"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

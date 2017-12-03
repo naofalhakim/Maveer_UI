@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.motionlaboratory.meesier.FormBuatAcara">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/rel1"
+        android:layout_weight="10"
+        >
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Acara"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/txt_buat_nama_acara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acara Pernikahan Ardi"
+            android:textSize="6pt" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_below="@id/l1"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_toRightOf="@id/img2"
+        android:layout_below="@id/l1"
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        >
+
+        <TextView
+            android:text="Jenis Acara"
+            android:textSize="8pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_buat_jenis_acara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pernikahan"
+            android:textSize="6pt" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_below="@id/l2"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/img3"
+        android:orientation="vertical"
+        android:paddingRight="120dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/txt_temp_tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="February 20, 2014"
+            android:textSize="6pt" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/img_btn_calender"
+        android:layout_toRightOf="@id/l3"
+        android:layout_below="@+id/l2"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        />
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/img3"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Undangan"
+            android:textSize="8pt" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_undangan_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="100"
+                android:textSize="6pt"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/et_undangan_count"
+                android:layout_alignParentRight="true"
+                android:text="Orang"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l4"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/img3"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jasa apa saja yang anda perlukan ?"
+            android:textSize="8pt" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            >
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cb_foto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jasa Fotografi"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb_undangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jasa Undangan"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cb_tempat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jasa Tempat"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jasa Sound System"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cb_dekor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jasa Dekorasi"
+                    />
+
+                <CheckBox
+                    android:id="@+id/cb_katering"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jasa Katering"
+
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_weight="4"
+        android:layout_below="@+id/rel1"
+        android:orientation="horizontal"
+        >
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="LANJUTKAN"
+                android:id="@+id/btn_lanjutkan"
+                android:background="@android:color/transparent"
+                />
+
+    </LinearLayout>
+
+</LinearLayout>

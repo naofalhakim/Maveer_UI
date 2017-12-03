@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/l_info_dekorasi"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/txt_ket_lokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/colorWhite"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+        >
+
+            <ImageView
+                android:id="@+id/img_punya_dekorasi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/face01"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+            />
+
+            <TextView
+                android:id="@+id/txt_nama_dekorasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O Santika P Hotel's"
+                android:layout_toRightOf="@id/img_punya_dekorasi"
+            />
+
+            <RatingBar
+                android:id="@+id/rat_dekorasi"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:numStars="4"
+                />
+
+            <TextView
+                android:id="@+id/txt_kategori_dekorasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotels"
+                android:textSize="5pt"
+                android:layout_below="@id/txt_nama_dekorasi"
+                android:layout_toRightOf="@id/img_punya_dekorasi"
+            />
+
+            <LinearLayout
+                android:layout_below="@id/txt_kategori_dekorasi"
+                android:layout_toRightOf="@id/img_punya_dekorasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_pick_location"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_lokasi_dekorasi"
+                android:text="Alamat hotel berada"
+                android:textSize="4pt"
+                android:layout_gravity="center_vertical"
+            />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10pt"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:id="@+id/txt_harga_dekorasi"
+                android:textStyle="bold"
+                android:text="Rp. 8.120.239,00"
+                android:layout_below="@id/rat_dekorasi"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+            />
+
+        </RelativeLayout>
+
+        <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:useDefaultMargins="true"
+        >
+
+                <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorPrimary" />
+
+                <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorPrimary" />
+
+                <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorPrimary" />
+
+                <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorPrimary" />
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

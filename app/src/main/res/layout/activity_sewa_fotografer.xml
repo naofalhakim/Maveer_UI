@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.motionlaboratory.meesier.SewaFotograferActivity">
+
+    <LinearLayout
+        android:id="@+id/l_search_fotografi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_search"
+            />
+
+        <EditText
+            android:id="@+id/et_daerah_dekorasi"
+            android:layout_weight="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kota / Proppinsi"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_ket_lokasi_fotografi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menunjukan hasil untuk lokasi berdasarkan tempat terdekat anda"
+        android:textSize="5pt"
+        android:layout_below="@id/l_search_fotografi"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/recycrel_fotografi"
+        android:layout_below="@id/txt_ket_lokasi_fotografi"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
